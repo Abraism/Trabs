@@ -43,25 +43,33 @@
 }
 
 @media (max-width: 900px) {
+  .intro-right {
+    display: flex;
+    justify-content: center;   /* FOTO DI TENGAH */
+    width: 100%;
+  }
+
+  .intro-right img {
+    max-width: 350px;          /* lebih pas di layar kecil */
+    margin: 0 auto;            /* pastikan benar-benar center */
+  }
+
   .intro-wrap {
-    flex-direction: column; /* turun ke bawah */
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;             /* padding kecil biar ga kepotong */
   }
 
   .intro-left {
     width: 100%;
-    margin-left: 0;
+    text-align: center;
+    margin: 0;
   }
 
   .intro-box {
     margin-left: 0;
   }
-
-  .intro-right img {
-    margin: 0 auto; /* di tengah kalau HP */
-  }
 }
-
 
 
 /* GENERAL STYLE */
@@ -125,9 +133,9 @@ nav ul li a:hover {
 /* INTRO SECTION */
 .intro-wrap {
     display: flex;
-    justify-content: space-between;
-    align-items: center;  /* from flex-start → center biar seimbang */
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
     padding: 60px;
 }
 
@@ -140,7 +148,7 @@ nav ul li a:hover {
 
 .intro-box {
     padding: 25px;
-    margin-left: 120px;
+    margin-left: 50px;
 }
 
 .intro-short h2 {
@@ -158,6 +166,10 @@ nav ul li a:hover {
 }
 
 /* FOTO KANAN */
+.intro-right {
+    padding-right: 40px;
+}
+
 .intro-right img {
     width: 100%;
     max-width: 450px;   /* ukuran maksimal foto */
@@ -165,6 +177,8 @@ nav ul li a:hover {
     border-radius: 120px 0 120px 0;
     display: block;
     margin-right: 0;
+    margin: 0;
+    
 }
 
 /* Gettouch */
@@ -245,5 +259,6 @@ nav ul li a:hover {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
 
 
