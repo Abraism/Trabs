@@ -139,9 +139,12 @@ nav ul li a:hover {
 
 /* FOTO KANAN */
 .intro-right img {
-    margin-right: 60px;
-    width: 610px;;
+    width: 100%;
+    max-width: 450px;   /* ukuran maksimal foto */
+    height: auto;
     border-radius: 120px 0 120px 0;
+    display: block;
+    margin-right: 0;
 }
 
 /* Gettouch */
@@ -222,3 +225,4 @@ nav ul li a:hover {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
