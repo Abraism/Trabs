@@ -42,6 +42,27 @@
   font-style: normal;
 }
 
+@media (max-width: 900px) {
+  .intro-wrap {
+    flex-direction: column; /* turun ke bawah */
+    text-align: center;
+  }
+
+  .intro-left {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .intro-box {
+    margin-left: 0;
+  }
+
+  .intro-right img {
+    margin: 0 auto; /* di tengah kalau HP */
+  }
+}
+
+
 
 /* GENERAL STYLE */
 body {
@@ -105,10 +126,9 @@ nav ul li a:hover {
 .intro-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;  /* from flex-start → center biar seimbang */
     gap: 40px;
     padding: 60px;
-    margin-top: 20px;
 }
 
 .intro-left {
@@ -225,4 +245,5 @@ nav ul li a:hover {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
 
