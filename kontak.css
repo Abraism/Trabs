@@ -98,6 +98,7 @@ nav ul li a:hover {
   padding: 30px;
   color: #222;
   margin-top: 60px
+  margin: 100px;
 }
 
 .kkiri {
@@ -390,6 +391,37 @@ margin-bottom: 300px;
     .contact-section input,
     .contact-section textarea {
         width: 100%;
+
+      /* ===== ANIMASI SKILL BAR ===== */
+
+.skill-bar {
+    width: 80%;
+    height: 28px;
+    background: #dcdcdc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0 25px;
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6bb4ff, #2d82ff);
+    width: 0%;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: width 2s ease;   
+}
+
+.skill-fill.animate {
+    width: var(--target-width);
+}
+
     }
 }
+
 
