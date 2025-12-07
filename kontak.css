@@ -218,7 +218,7 @@ nav ul li a:hover {
 
 .skill-fill {
   height: 100%;
-  background: #222;
+  background: linear-gradient(90deg, #6bb4ff, #2d82ff);
   font-family: 'Inter';
   font-weight: bold;
   color: #fff;
@@ -247,6 +247,7 @@ nav ul li a:hover {
   font-size: 40px;
   margin-top: 80px;
   font-family: 'Coolvetica';
+  margin-bottom: 5%;
 }
 .D1 {
   margin: 20px auto 0; 
@@ -258,7 +259,7 @@ nav ul li a:hover {
 }
 
 .de1 {
-  padding :30px;
+  padding: 30px;
   width: auto;
   font-family: 'Inter';
   font-size: 20px;
@@ -398,5 +399,6 @@ margin-bottom: 300px;
     .contact-section input,
     .contact-section textarea {
         width: 100%;
+
 
 
